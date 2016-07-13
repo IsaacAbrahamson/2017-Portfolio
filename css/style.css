@@ -17,6 +17,28 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+@font-face {
+  font-family: headerFont;
+  src: url(fonts/header.ttf);
+}
+
+@font-face {
+  font-family: battlefield;
+  src: url(fonts/battlefield.ttf);
+}
+
+#video-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  z-index: -100;
+  background-size: cover;
+}
+
 .row {
   width: 100%;
   margin-right: -15px;
@@ -39,10 +61,9 @@ body {
 }
 
 #header {
-  height: 50vh;
+  height: 100vh;
   padding: 0px;
   width: 100%;
-  background-image: url("https://dl.dropbox.com/s/nwn7qyplyiet9ip/hKavZCS%20-%20Imgur.jpg?dl=0");
 }
 
 @media screen and (max-width:680px) {
@@ -62,9 +83,9 @@ body {
 
 .middle {
   position: absolute;
-  top: 25%;
-  transform: translateY(-25%);
-  -webkit-transform: translateY(-25%);
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
 }
 
 .center {
@@ -75,18 +96,19 @@ body {
 
 #header p {
   color: white;
-  font: 25pt Arial, sans-serif;
+  font: 25pt headerFont, Arial, sans-serif;
 }
 
 #services {
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 .service {
   height: 250px;
   width: 350px;
-  background-color: #3F5088;
+  background-color: #1576ca;
   margin-left: 30px;
   text-align: center;
   padding: 50px;
@@ -97,7 +119,7 @@ body {
   .service {
     height: 250px;
     width: 280px;
-    background-color: #3F5088;
+    background-color: #1576ca;
     margin-left: 30px;
     text-align: center;
     padding: 20px;
@@ -132,7 +154,7 @@ h1 {
   margin-bottom: 50px;
   width: 70px;
   display: block;
-  border-top: 2px solid #3F5088;
+  border-top: 2px solid #1576ca;
 }
 
 #portfolio {
@@ -213,6 +235,10 @@ h1 {
   padding: 0;
 }
 
+#contact * {
+  color: #ccc;
+}
+
 .content {
   height: 100%;
   width: 850px;
@@ -246,12 +272,12 @@ h1 {
 }
 
 .group i {
-  color: #3F5088;
+  color: #1576ca!important;
 }
 
 input {
   font-size: 18px;
-  border: 2px solid #3F5088;
+  border: 2px solid #1576ca;
   border-radius: 5px;
   margin-bottom: 15px;
   width: 100%;
@@ -262,7 +288,7 @@ textarea {
   padding: 5px;
   font-size: 18px;
   display: block;
-  border: 2px solid #3F5088;
+  border: 2px solid #1576ca;
   border-radius: 5px;
   width: 100%!important;
   height: 150px;
@@ -272,7 +298,7 @@ textarea {
 .content-right button {
   float: right;
   font-size: 18px;
-  border: 2px solid #3F5088;
+  border: 2px solid #1576ca;
   border-radius: 10px;
   margin-top: 30px;
   margin-bottom: 80px;
@@ -282,7 +308,7 @@ textarea {
 }
 
 .content-right button:hover {
-  background-color: #3F5088;
+  background-color: #1576ca;
   color: #FFF;
   transition: all 400ms;
 }
@@ -357,11 +383,11 @@ textarea {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #3F5088;
-  border-top: 2px solid #576AA9;
+  background-color: #1576ca;
+  border-top: 2px solid #2a91ea;
 }
 
-#footer i {
+#footer li {
   cursor: pointer;
 }
 
@@ -385,7 +411,7 @@ textarea {
   color: white;
 }
 
-#footer i:hover {
+#footer li:hover {
   -webkit-transform: scale(0.93);
   -moz-transform: scale(0.93);
   -ms-transform: scale(0.93);
@@ -437,7 +463,7 @@ textarea {
 }
 
 #nav h3 {
-  font-family: Lucida Console, Lucida Sans Typewriter, Verdana;
+  font-family: battlefield, Lucida Console, Lucida Sans Typewriter, Verdana;
   font-size: 18px;
   padding-right: 30px;
   cursor: default;
@@ -449,7 +475,7 @@ textarea {
 }
 
 #nav a {
-  font-family: Lucida Console, Lucida Sans Typewriter, Verdana;
+  font-family: battlefield, Lucida Console, Lucida Sans Typewriter, Verdana;
   font-size: 18px;
   padding-right: 10px;
   text-decoration: none;
@@ -466,13 +492,13 @@ textarea {
 }
 
 .nav-body {
-  background-color: #FFF!important;
+  background-color: #191717!important;
   border-bottom: 0px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)!important;
 }
 
 .nav-body * {
-  color: #3F5088!important;
+  color: #1576ca!important;
   -webkit-transition: color .5s linear;
   transition: color .5s linear;
 }
@@ -494,7 +520,7 @@ textarea {
   position: absolute;
   top: 50px;
   right: 20px;
-  background-color: #FFF;
+  background-color: #191717;
   min-width: 140px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)!important;
 }
@@ -520,12 +546,12 @@ textarea {
 
 @media screen and (max-width:1000px) {
   #nav-container {
-    background-color: #FFF!important;
+    background-color: #191717!important;
     border-bottom: 0px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)!important;
   }
   #nav-container * {
-    color: #3F5088!important;
+    color: #1576ca!important;
     -webkit-transition: color .5s linear;
     transition: color .5s linear;
   }
