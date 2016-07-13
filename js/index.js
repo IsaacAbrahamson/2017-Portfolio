@@ -32,8 +32,7 @@ $(document).ready(function() {
 	  $(".cover", this).stop().animate({top:tileHeight},{queue:false,duration:160});
 	});
 
-  //smooth scrolling anchor tags
-  //Source - https://css-tricks.com/snippets/jquery/smooth-scrolling/
+  //smooth scrolling anchor tags - https://css-tricks.com/snippets/jquery/smooth-scrolling/
   $(function() {
     $('a[href*="#"]:not([href="#"])').click(function() {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
