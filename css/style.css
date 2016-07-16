@@ -18,13 +18,18 @@ body {
 }
 
 @font-face {
-  font-family: headerFont;
-  src: url(fonts/header.ttf);
+  font-family: brooke;
+  src: url(fonts/brooke.ttf);
 }
 
 @font-face {
   font-family: battlefield;
   src: url(fonts/battlefield.ttf);
+}
+
+@font-face {
+  font-family: title;
+  src: url(fonts/trench.ttf);
 }
 
 #vid-container {
@@ -61,7 +66,6 @@ body {
 
 .col-centered {
   display: inline-block;
-  float: none;
   text-align: left;
   margin-right: -4px;
 }
@@ -74,20 +78,6 @@ body {
   height: 100vh;
   padding: 0px;
   width: 100%;
-}
-
-@media screen and (max-width:680px) {
-  #header {
-    height: 100vh;
-  }
-  #text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    padding-right: 10%;
-    padding-left: 10%;
-  }
 }
 
 .middle {
@@ -105,8 +95,25 @@ body {
 
 #header p {
   color: white;
-  font: 25pt headerFont, Arial, sans-serif;
+  font: 80pt title, Arial, sans-serif;
   text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.74);
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+}
+
+@media screen and (max-width:780px) {
+  #header p {
+    font-size: 60pt;
+  }
+}
+
+@media screen and (max-width:580px) {
+  #header p {
+    font-size: 40pt;
+  }
 }
 
 #services {
@@ -153,6 +160,8 @@ body {
 }
 
 h1 {
+  font-family: brooke, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
   margin-top: 80px;
   margin-bottom: 5px;
   text-align: center;
@@ -391,8 +400,8 @@ textarea {
 }
 
 .media-icon {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 65px;
   background-color: rgba(0, 0, 0, 0);
   border-radius: 100%;
   line-height: 80px;
@@ -435,6 +444,7 @@ textarea {
 
 #footer h3 {
   color: white;
+  font-family: brooke;
 }
 
 @media screen and (max-width:680px) {
