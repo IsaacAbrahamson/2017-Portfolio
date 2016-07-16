@@ -27,16 +27,26 @@ body {
   src: url(fonts/battlefield.ttf);
 }
 
-#video-bg {
+#vid-container {
   position: fixed;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  min-width: 100%;
-  height: auto;
-  min-height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   z-index: -100;
-  background-size: cover;
+}
+
+#video {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;   
 }
 
 .row {
@@ -96,6 +106,7 @@ body {
 #header p {
   color: white;
   font: 25pt headerFont, Arial, sans-serif;
+  text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.74);
 }
 
 #services {
@@ -107,7 +118,7 @@ body {
 .service {
   height: 250px;
   width: 350px;
-  background-color: #1576ca;
+  background-color: #6898BD;
   margin-left: 30px;
   text-align: center;
   padding: 50px;
@@ -118,7 +129,7 @@ body {
   .service {
     height: 250px;
     width: 280px;
-    background-color: #1576ca;
+    background-color: #6898BD;
     margin-left: 30px;
     text-align: center;
     padding: 20px;
@@ -153,7 +164,7 @@ h1 {
   margin-bottom: 50px;
   width: 70px;
   display: block;
-  border-top: 2px solid #1576ca;
+  border-top: 2px solid #6898BD;
 }
 
 #portfolio {
@@ -187,32 +198,24 @@ h1 {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(63, 80, 136, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: -100;
 }
 
 .captionfull .boxcaption {
-  top: 300px;
+  top: 371px;
   left: 0;
 }
 
-.three-tiles .boxgrid {
-  width: 300px;
-  height: 200px;
-  margin: 10px;
-  float: left;
-  background: #161613;
-  overflow: hidden;
-  position: relative;
-}
-
 .two-tiles .boxgrid {
-  width: 500px;
-  height: 200px;
+  width: 540px;
+  height: 371px;
+  background-image: url(media/site.png);
   margin: 10px;
   float: left;
-  background: #161613;
   overflow: hidden;
   position: relative;
+  z-index: 200;
 }
 
 .three-tiles .boxgrid img {
@@ -267,16 +270,15 @@ h1 {
 
 .group h2 {
   margin-left: 10px;
-  color: #666666;
 }
 
 .group i {
-  color: #1576ca!important;
+  color: #A1CFE6!important;
 }
 
 input {
   font-size: 18px;
-  border: 2px solid #1576ca;
+  border: 2px solid #A1CFE6;
   border-radius: 5px;
   margin-bottom: 15px;
   width: 100%;
@@ -287,7 +289,7 @@ textarea {
   padding: 5px;
   font-size: 18px;
   display: block;
-  border: 2px solid #1576ca;
+  border: 2px solid #A1CFE6;
   border-radius: 5px;
   width: 100%!important;
   height: 150px;
@@ -297,7 +299,7 @@ textarea {
 .content-right button {
   float: right;
   font-size: 18px;
-  border: 2px solid #1576ca;
+  border: 2px solid #A1CFE6;
   border-radius: 10px;
   margin-top: 30px;
   margin-bottom: 80px;
@@ -307,8 +309,8 @@ textarea {
 }
 
 .content-right button:hover {
-  background-color: #1576ca;
-  color: #FFF;
+  background-color: #A1CFE6;
+  color: black!important;
   transition: all 400ms;
 }
 
@@ -382,8 +384,10 @@ textarea {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-color: #1576ca;
-  border-top: 2px solid #2a91ea;
+  background-color: #34536F;
+  border-top: 2px solid #476f94;
+  /*background-color: #1576ca;
+  border-top: 2px solid #2a91ea;*/
 }
 
 .media-icon {
@@ -511,7 +515,7 @@ textarea {
 }
 
 #nav a:hover {
-  color: #1576ca;
+  color: #A1CFE6;
   -webkit-transition: color .2s linear;
   transition: color .2s linear;
   cursor: pointer;
@@ -524,7 +528,7 @@ textarea {
 }
 
 .nav-body * {
-  color: #1576ca!important;
+  color: #A1CFE6!important;
   -webkit-transition: color .5s linear;
   transition: color .5s linear;
 }
@@ -577,7 +581,7 @@ textarea {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)!important;
   }
   #nav-container * {
-    color: #1576ca!important;
+    color: #A1CFE6!important;
     -webkit-transition: color .5s linear;
     transition: color .5s linear;
   }
