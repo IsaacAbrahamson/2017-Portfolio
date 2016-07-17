@@ -13,13 +13,17 @@
 </head>
 
 <body>
-  <video autoplay loop muted id="video-bg">
-    <source src="media/video.mp4" type="video/mp4">
-  </video>
+  <div id="vid-container">
+    <video autoplay controls="true" loop muted id="video">
+      <source src="media/background.mp4">
+      <source src="media/background.mp4" type="video/mp4">
+    </video>
+  </div>
+
 
   <div class="container-fluid" id="header">
-    <div class="middle center" id="text">
-      <p>Freelance Web and Software Developer</p>
+    <div class="middle center" style="width: 98%" id="text">
+      <p>Web Solutions</p>
     </div>
   </div>
 
@@ -66,7 +70,7 @@
     <div class="row row-centered two-tiles">
       <div class="col-centered">
         <div class="boxgrid captionfull">
-          <img src="https://dl.dropbox.com/s/yh7051slxvm3nyj/1.jpg?dl=0" />
+          <img src="media/border.png" />
           <div class="cover boxcaption">
             <h3>Example Tile</h3>
             <p>This is just an example portfolio tile placeholder.</p>
@@ -75,37 +79,7 @@
       </div>
       <div class="col-centered">
         <div class="boxgrid captionfull">
-          <img src="https://dl.dropbox.com/s/yhph0u9amj93joo/2.jpg?dl=0" />
-          <div class="cover boxcaption">
-            <h3>Example Tile</h3>
-            <p>This is just an example portfolio tile placeholder.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row row-centered three-tiles">
-      <div class="col-centered">
-        <div class="boxgrid captionfull">
-          <img src="https://dl.dropbox.com/s/4uzsuo3hp039lp4/3.jpg?dl=0" />
-          <div class="cover boxcaption">
-            <h3>Example Tile</h3>
-            <p>This is just an example portfolio tile placeholder.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-centered">
-        <div class="boxgrid captionfull">
-          <img src="https://dl.dropbox.com/s/q1adi8t097x9eqc/4.png?dl=0" />
-          <div class="cover boxcaption">
-            <h3>Example Tile</h3>
-            <p>This is just an example portfolio tile placeholder.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-centered">
-        <div class="boxgrid captionfull">
-          <img src="https://dl.dropbox.com/s/03lm15589el157s/5.jpg?dl=0" />
+          <img src="media/border.png" />
           <div class="cover boxcaption">
             <h3>Example Tile</h3>
             <p>This is just an example portfolio tile placeholder.</p>
@@ -117,7 +91,7 @@
     <div class="row row-centered two-tiles">
       <div class="col-centered">
         <div class="boxgrid captionfull">
-          <img src="https://dl.dropbox.com/s/mgt4i1y76gd37ta/6.jpg?dl=0" />
+          <img src="media/border.png" />
           <div class="cover boxcaption">
             <h3>Example Tile</h3>
             <p>This is just an example portfolio tile placeholder.</p>
@@ -126,7 +100,7 @@
       </div>
       <div class="col-centered">
         <div class="boxgrid captionfull">
-          <img src="https://dl.dropbox.com/s/xmrxf1nqot14fpn/7.jpg?dl=0" />
+          <img src="media/border.png" />
           <div class="cover boxcaption">
             <h3>Example Tile</h3>
             <p>This is just an example portfolio tile placeholder.</p>
@@ -139,7 +113,7 @@
 
   <div class="container-fluid" id="contact">
     <h1>Get in Touch</h1>
-    <div class="blue-bar"></div>
+    <div class="blue-bar" style="border-top: 2px solid #A1CFE6;"></div>
     <div class="content">
       <div class="content-left">
         <div class="group">
@@ -156,8 +130,8 @@
         </div>
       </div>
       <div class="content-right">
-        <input type="text" placeholder=" Your Name"></input>
-        <textarea placeholder=" Message"></textarea>
+        <input type="text" placeholder="Your Name"></input>
+        <textarea placeholder="Message"></textarea>
         <button>Send Message</button>
       </div>
     </div>
@@ -169,10 +143,11 @@
     <div id="media-icons">
       <div class="media-icon"><a href="https://github.com/IsaacAbrahamson" target="_blank"><i class="fa fa-github icon fa-3x" aria-hidden="true"></i></a></div>
       <div class="media-icon">
-        <a href="http://freecodecamp.com/isaacabrahamson" target="_blank"><img src="media/freecodecamp_logo.png" class="media-img"
-          /></a>
+        <a href="http://freecodecamp.com/isaacabrahamson" target="_blank"><img src="media/freecodecamp_logo.png" class="media-img" /></a>
       </div>
-      <div class="media-icon"><a href="https://www.linkedin.com/in/isaac-abrahamson-1616bb11b?trk=nav_responsive_tab_profile" target="_blank"><i class="fa my-fa-linkedin icon fa-3x" aria-hidden="true"></i></a></div>
+      <div class="media-icon">
+        <a href="https://www.linkedin.com/in/isaac-abrahamson-1616bb11b?trk=nav_responsive_tab_profile" target="_blank"><i class="fa my-fa-linkedin icon fa-3x" aria-hidden="true"></i></a>
+      </div>
     </div>
 
     <h3>Designed and Developed by Isaac Abrahamson</h3>

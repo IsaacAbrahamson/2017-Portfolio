@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  //play background video for android devices
+  var video = document.getElementById('video');
+  video.play();
+
   //stop float from being pushed down
   var leftHeight = $('.content-left').height() * -1;
   $('.content-right').css('margin-top', leftHeight);
