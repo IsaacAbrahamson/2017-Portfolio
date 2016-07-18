@@ -101,7 +101,7 @@ body {
 
 #header p {
   color: white;
-  font: 80pt title, Arial, sans-serif;
+  font: 90pt title, Arial, sans-serif;
   text-shadow: 8px 8px 12px rgba(0, 0, 0, 0.74);
   transform: rotate(2deg);
   -webkit-transform: rotate(2deg);
@@ -112,13 +112,13 @@ body {
 
 @media screen and (max-width:780px) {
   #header p {
-    font-size: 60pt;
+    font-size: 70pt;
   }
 }
 
 @media screen and (max-width:580px) {
   #header p {
-    font-size: 40pt;
+    font-size: 50pt;
   }
 }
 
