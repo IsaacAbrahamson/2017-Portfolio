@@ -109,12 +109,6 @@ body {
   -webkit-transform: translateY(-50%);
 }
 
-.center {
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-
 #header p {
   color: white;
   font: 90pt title, Arial, sans-serif;
@@ -145,6 +139,52 @@ body {
 }
 
 .service {
+  background-color: white;
+  border: 1px solid #6898BD;
+  width: 300px;
+  height: 270px;
+  border-radius: 4px;
+  box-shadow: inset 0 -4px #6898BD;
+  padding: 48px 30px 0;
+  margin-bottom: 40px;
+  line-height: 22px;
+}
+
+.col-middle {  
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.service i {
+  color: #6898BD;
+  font-size: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.service h3 {
+  color: #6898BD;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.service p {
+  color: black;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+/*.service {
   height: 250px;
   width: 350px;
   background-color: #6898BD;
@@ -179,7 +219,7 @@ body {
 
 .service p {
   color: white;
-}
+}*/
 
 h1 {
   font-family: brooke, Verdana, Geneva, Tahoma, sans-serif;
