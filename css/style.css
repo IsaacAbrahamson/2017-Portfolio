@@ -479,6 +479,10 @@ textarea {
   border-top: 2px solid #2a91ea;*/
 }
 
+#media-icons {
+  margin-top: 40px;
+}
+
 .media-icon {
   width: 70px;
   height: 65px;
@@ -531,7 +535,7 @@ textarea {
   #footer h3 {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 15px;
+    font-size: 22px;
   }
 
   .media-img {
@@ -550,10 +554,14 @@ textarea {
 }
 
 @media screen and (max-width:600px) {
+  #footer {
+    height: 150px;
+  }
+
   #footer h3 {
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 13px;
+    font-size: 16px;
   }
   #footer i {
     font-size: 25px;
