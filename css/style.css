@@ -65,8 +65,7 @@ body {
 
 .col-centered {
   display: inline-block;
-  text-align: left;
-  margin-right: -4px;
+  margin-right: -26px;
 }
 
 .spacer {
@@ -133,9 +132,7 @@ body {
 }
 
 #services {
-  margin: 0;
-  padding: 0;
-  background-color: #eee;
+  background: #eee;
 }
 
 .service {
@@ -150,7 +147,7 @@ body {
   line-height: 22px;
 }
 
-.col-middle {  
+.col-middle {
   margin-right: 40px;
   margin-left: 40px;
 }
@@ -175,7 +172,20 @@ body {
 
 .flex-center {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+}
+
+@media (max-width: 1250px) {
+  .flex-center {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service {
+    flex: 1 1 auto;
+    align-self: center;
+  }
 }
 
 .center {
@@ -184,42 +194,14 @@ body {
   text-align: center;
 }
 
-/*.service {
-  height: 250px;
-  width: 350px;
-  background-color: #6898BD;
-  margin-left: 30px;
-  text-align: center;
-  padding: 50px;
-  margin-bottom: 60px;
-}
-
-@media screen and (max-width:600px) {
-  .service {
-    height: 250px;
-    width: 280px;
-    background-color: #6898BD;
-    margin-left: 30px;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 60px;
-  }
-}
-
-.service i {
-  color: white;
-  font-size: 50px;
-}
-
-.service h3 {
-  color: white;
-  font-size: 22px;
+#services h1 {
+  font-family: brooke, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
+  margin-top: 0px;
+  padding-top: 80px;
+  margin-bottom: 5px;
+  text-align: center;
 }
-
-.service p {
-  color: white;
-}*/
 
 h1 {
   font-family: brooke, Verdana, Geneva, Tahoma, sans-serif;
