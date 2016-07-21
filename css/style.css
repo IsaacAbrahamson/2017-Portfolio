@@ -88,6 +88,24 @@ body {
   margin-right: auto;
 }
 
+@media screen and (max-width:780px) {
+  .gallery img {
+    width: 90%;
+  }
+  .gallery h2 {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .gallery p {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  .gallery ul {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+
 #vid-container {
   position: fixed;
   left: 0;
