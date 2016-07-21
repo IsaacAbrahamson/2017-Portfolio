@@ -1,10 +1,11 @@
 $(document).ready(function () {
+  // Draw dotted lines in services section
   drawLines();
   window.onresize = function (event) {
     drawLines();
   };
 
-  //play background video for android devices
+  //play background video for mobile devices
   var video = document.getElementById('video');
   video.play();
 
@@ -12,16 +13,13 @@ $(document).ready(function () {
   var leftHeight = $('.content-left').height() * -1;
   $('.content-right').css('margin-top', leftHeight);
 
-  $(document).scroll(function () {
-    //remove transparent class from header
+  // change transparency on header
+  $(document).scroll(function () {    
     if ($(document).scrollTop() > 5) {
       if (!$('#nav-container').hasClass('nav-body')) {
         $('#nav-container').addClass('nav-body');
       }
-    }
-
-    //add transparent class to header
-    if ($(document).scrollTop() < 5) {
+    } else if ($(document).scrollTop() < 5) {
       if ($('#nav-container').hasClass('nav-body')) {
         $('#nav-container').removeClass('nav-body');
       }
@@ -31,14 +29,6 @@ $(document).ready(function () {
   //show mobile dropdown menu
   $('#nav .icon').click(function () {
     $('#mobile-dropdown').fadeToggle('fast');
-  });
-
-  //Animate Portfolio Captions
-  $('.boxgrid.captionfull').hover(function () {
-    $(".cover", this).stop().animate({ top: '0px' }, { queue: false, duration: 160 });
-  }, function () {
-    var tileHeight = $(this).height();
-    $(".cover", this).stop().animate({ top: tileHeight }, { queue: false, duration: 160 });
   });
 
   //smooth scrolling anchor tags - https://css-tricks.com/snippets/jquery/smooth-scrolling/
@@ -80,10 +70,12 @@ $(document).ready(function () {
     var servicePointY = ($("#serviceService").offset().top - $("#services").offset().top) + ($("#serviceService").outerHeight() / 2);
 
     if ($(window).width() <= 1250) {
+      // draw one line connecting all services
       ctx.moveTo(businessPointX, businessPointY);
       ctx.lineTo(servicePointX, servicePointY);
       ctx.stroke();
     } else {
+      //draw line from business service to customer service
       ctx.moveTo(businessPointX, businessPointY);
       ctx.lineTo(businessPointX, servicePointY);
       ctx.stroke();
@@ -91,13 +83,15 @@ $(document).ready(function () {
       ctx.lineTo(servicePointX, servicePointY);
       ctx.stroke();
 
+      //draw line from networking service to customer service
       ctx.moveTo(netPointX, netPointY);
       ctx.lineTo(netPointX, servicePointY);
       ctx.stroke();
       ctx.moveTo(netPointX, servicePointY);
       ctx.lineTo(servicePointX, servicePointY);
       ctx.stroke();
-
+      
+      //draw line from development service to customer service
       ctx.moveTo(devPointX, devPointY);
       ctx.lineTo(servicePointX, servicePointY);
       ctx.stroke();
