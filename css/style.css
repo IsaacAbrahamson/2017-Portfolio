@@ -345,7 +345,6 @@ h1 {
 }
 
 /* Contact Section */
-
 #contact {
   width: 100%;
   margin: 0;
@@ -507,6 +506,7 @@ textarea {
 
 #media-icons {
   margin-top: 40px;
+  margin-left: 50px;
 }
 
 .media-icon {
