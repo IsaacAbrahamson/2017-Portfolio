@@ -123,6 +123,40 @@ h1 {
   margin-left: 2%;
 }
 
+.page-down {
+    cursor: pointer;
+    height: 20px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    z-index: 105;
+}
+
+.page-down .icon {
+    display: block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
+.page-down .icon svg {
+    fill: #ffffff !important;    
+    transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+}
+
+.page-down .icon svg:hover {
+  transform: scale(1.3);
+}
+
+@media (max-width: 780px) {
+  .page-down {
+    bottom: 20px!important;
+  }
+}
+
 @media screen and (max-width:780px) {
   #header p {
     font-size: 70pt;
