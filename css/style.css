@@ -109,6 +109,20 @@ h1 {
   pointer-events: none 
 }
 
+.video-poster {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto; 
+  pointer-events: none 
+}
+
 #header {
   height: 100vh;
   padding: 0px;
