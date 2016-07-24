@@ -5,16 +5,18 @@ $(document).ready(function () {
     drawLines();
   };
 
-  //play background video for mobile devices
-  var video = document.getElementById('video');
-  video.play();
+  //disable background video for phones
+  if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || screen.width < 500) {
+    var video = document.getElementById('video');
+    video.remove();    
+  }
 
   //stop float from being pushed down
   var leftHeight = $('.content-left').height() * -1;
   $('.content-right').css('margin-top', leftHeight);
 
   // change transparency on header
-  $(document).scroll(function () {    
+  $(document).scroll(function () {
     if ($(document).scrollTop() > 5) {
       if (!$('#nav-container').hasClass('nav-body')) {
         $('#nav-container').addClass('nav-body');
@@ -90,7 +92,7 @@ $(document).ready(function () {
       ctx.moveTo(netPointX, servicePointY);
       ctx.lineTo(servicePointX, servicePointY);
       ctx.stroke();
-      
+
       //draw line from development service to customer service
       ctx.moveTo(devPointX, devPointY);
       ctx.lineTo(servicePointX, servicePointY);
