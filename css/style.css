@@ -13,6 +13,11 @@
   src: url(fonts/trench.ttf);
 }
 
+@font-face {
+  font-family: freedom;
+  src: url(fonts/freedom.ttf);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -32,8 +37,7 @@ body {
 }
 
 h1 {
-  font-family: brooke, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
+  font-family: freedom, Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 80px;
   margin-bottom: 5px;
   text-align: center;
@@ -286,8 +290,6 @@ h1 {
 }
 
 #services h1 {
-  font-family: brooke, Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
   margin-top: 0px;
   padding-top: 80px;
   margin-bottom: 5px;
@@ -588,7 +590,7 @@ textarea {
 
 #footer h3 {
   color: white;
-  font-family: brooke;
+  font-family: title, Arial, sans-serif;
 }
 
 @media screen and (max-width:680px) {
@@ -668,7 +670,7 @@ textarea {
 }
 
 #nav a {
-  font-family: battlefield, Lucida Console, Lucida Sans Typewriter, Verdana;
+  font-family: freedom, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   padding-right: 10px;
   text-decoration: none;
