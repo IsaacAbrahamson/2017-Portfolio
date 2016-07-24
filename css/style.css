@@ -761,3 +761,12 @@ textarea {
     display: inline-block;
   }
 }
+
+@media screen and (max-width:300px) {
+  #nav h3 {
+    font-family: battlefield, Lucida Console, Lucida Sans Typewriter, Verdana;
+    font-size: 14px;
+    padding-right: 5px;
+    cursor: default;
+  }
+}
