@@ -5,16 +5,6 @@ $(document).ready(function () {
     drawLines();
   };
 
-  //disable background video for phones
-  if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || screen.width < 500) {
-    var video = document.getElementById('video');
-    video.remove();    
-  }
-
-  //stop float from being pushed down
-  var leftHeight = $('.content-left').height() * -1;
-  $('.content-right').css('margin-top', leftHeight);
-
   // change transparency on header
   $(document).scroll(function () {
     if ($(document).scrollTop() > 5) {
@@ -30,8 +20,16 @@ $(document).ready(function () {
 
   //show mobile dropdown menu
   $('#nav .icon').click(function () {
-    $('#mobile-dropdown').fadeToggle('fast');
+    if ($('#mobile-dropdown').hasClass('hidden-right')) {
+      $('#mobile-dropdown').removeClass('hidden-right');
+    } else {
+      $('#mobile-dropdown').addClass('hidden-right');
+    }
   });
+
+  //stop float from being pushed down
+  var leftHeight = $('.content-left').height() * -1;
+  $('.content-right').css('margin-top', leftHeight);
 
   //smooth scrolling anchor tags - https://css-tricks.com/snippets/jquery/smooth-scrolling/
   $(function () {
