@@ -1,2 +1,2 @@
 # Portfolio Page.
-View live at https://isaacabrahamson.github.io/
+Outdated. Redesigning new portfolio and will override soon.
