@@ -105,12 +105,12 @@ p {
   padding: 20px;
   left: 0;
   right: 0;
-  margin: 20px auto; 
+  margin: 20px auto;
   transition: all 200ms;
   text-decoration: none;
 }
 
-.jumbo-btn:visited { 
+.jumbo-btn:visited {
   text-decoration: none;
 }
 
@@ -252,6 +252,7 @@ p {
     justify-content: center;
     align-items: center;
   }
+
   .service {
     flex: 1 1 auto;
     align-self: center;
@@ -283,7 +284,7 @@ p {
 }
 
 /* Portfolio Section */
-#portfolio hr {  
+#portfolio hr {
   margin-top: 80px;
 }
 
@@ -322,10 +323,11 @@ p {
 
 .gallery li a {
   font-size: 20px;
-  text-decoration: none!important;
+  text-decoration: none !important;
   color: rgb(0, 112, 192);
   transition: color 400ms;
 }
+
 .gallery a:hover {
   color: rgb(0, 112, 192);
 }
@@ -341,14 +343,17 @@ p {
   .gallery img {
     width: 90%;
   }
+
   .gallery h2 {
     padding-right: 10%;
     padding-left: 10%;
   }
+
   .gallery p {
     padding-right: 10%;
     padding-left: 10%;
   }
+
   .gallery ul {
     padding-right: 10%;
     padding-left: 10%;
@@ -374,7 +379,7 @@ p {
 #contact * {
   color: black;
   font-size: 19px;
-  clear: both;  
+  clear: both;
 }
 
 #contact h1 {
@@ -413,7 +418,7 @@ p {
 }
 
 .group i {
-  color: rgb(0, 112, 192)!important;
+  color: rgb(0, 112, 192) !important;
 }
 
 input {
@@ -429,7 +434,7 @@ textarea {
   font-size: 18px;
   display: block;
   border: 2px solid rgb(0, 112, 192);
-  width: 100%!important;
+  width: 100% !important;
   height: 150px;
   resize: none;
 }
@@ -447,7 +452,7 @@ textarea {
 
 .content-right button:hover {
   background-color: rgb(0, 112, 192);
-  color: white!important;
+  color: white !important;
   transition: all 400ms;
 }
 
@@ -455,28 +460,34 @@ textarea {
   .content {
     width: 100%;
   }
+
   .content-left {
     float: none;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+
   .content * {
     font-size: 17px;
   }
+
   .content-right {
     float: none;
-    margin-top: 25px!important;
+    margin-top: 25px !important;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
+
   input {
     font-size: 17px;
   }
+
   textarea {
     font-size: 17px;
   }
+
   .content-right button {
     font-size: 17px;
     width: 30%;
@@ -487,12 +498,15 @@ textarea {
   .content * {
     font-size: 15px;
   }
+
   input {
     font-size: 15px;
   }
+
   textarea {
     font-size: 15px;
   }
+
   .content-right button {
     font-size: 15px;
     width: 50%;
@@ -503,12 +517,15 @@ textarea {
   .content * {
     font-size: 13px;
   }
+
   input {
     font-size: 14px;
   }
+
   textarea {
     font-size: 14px;
   }
+
   .content-right button {
     font-size: 14px;
     width: 70%;
@@ -527,7 +544,7 @@ textarea {
 }
 
 #media-icons {
-  margin-top: 40px;  
+  margin-top: 40px;
   margin-left: 65.72px;
 }
 
@@ -549,7 +566,7 @@ textarea {
 
 .media-img {
   position: relative;
-  width:55px;
+  width: 55px;
 }
 
 .media-icon:hover {
@@ -587,10 +604,10 @@ textarea {
   }
 
   .media-img {
-    width:37px;
+    width: 37px;
   }
 
-  #media-icons { 
+  #media-icons {
     margin-left: 0px;
   }
 
@@ -615,6 +632,7 @@ textarea {
     padding-right: 10px;
     font-size: 16px;
   }
+
   #footer i {
     font-size: 25px;
   }
@@ -681,9 +699,9 @@ textarea {
 }
 
 .nav-body {
-  background-color: rgba(255, 255, 255, 0.95)!important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
   border-bottom: 0px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)!important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
 }
 
 .icon-container {
@@ -704,12 +722,12 @@ textarea {
   background-color: white;
   z-index: 100;
   min-width: 140px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)!important;
-  transition: right 400ms!important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  transition: right 400ms !important;
 }
 
 .hidden-right {
-  right: -175px!important;
+  right: -175px !important;
 }
 
 #mobile-dropdown a {
@@ -733,24 +751,29 @@ textarea {
 
 @media screen and (max-width:800px) {
   #nav-container {
-    background-color: rgba(255, 255, 255, 0.95)!important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
     border-bottom: 0px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)!important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
   }
+
   #nav-container * {
-    color: rgb(0, 112, 192)!important;
+    color: rgb(0, 112, 192) !important;
     -webkit-transition: color .5s linear;
     transition: color .5s linear;
   }
+
   #nav-container a:hover {
-    color: #eee!important;
+    color: #eee !important;
   }
+
   #nav {
     width: 90%
   }
+
   #nav li {
     display: none
   }
+
   #nav .icon {
     display: inline-block;
   }
